@@ -26,6 +26,7 @@ const Header = () => {
           <div className="flex flex-row gap-3">
             <LanguagePicker />
             <ModeToggle />
+            <Button>Entrar</Button>
           </div>
         </div>
       </div>
@@ -44,19 +45,14 @@ const Header = () => {
         </div>
 
         <div className="flex flex-col gap-8">
-          <Button>Entrar</Button>
-
           <button
-            className="flex flex-row justify-center gap-4 items-center text-sm"
+            className="flex flex-row justify-center gap-2 items-center text-sm"
             onClick={() => setCartOpen(true)}
           >
             <div className="flex flex-row items-center gap-2">
               <ShoppingCartIcon />
-              Carrinho
-            </div>
-
-            <div className="flex flex-row items-center gap-2">
-              <span>0 items</span>
+              <span>Carrinho</span>
+              <span>(0 items)</span>
             </div>
           </button>
         </div>

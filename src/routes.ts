@@ -1,6 +1,9 @@
+import { lazy } from "react";
 import { createBrowserRouter } from "react-router";
 import { HomePage } from "./pages/home";
 import { RootComponent } from "./root";
+
+const ProductPage = lazy(() => import("./pages/product"));
 
 const router = createBrowserRouter([
   {
@@ -10,6 +13,10 @@ const router = createBrowserRouter([
       {
         index: true,
         Component: HomePage,
+      },
+      {
+        path: "product/:id",
+        Component: ProductPage,
       },
     ],
   },
