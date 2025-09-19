@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { SearchIcon, ShoppingCartIcon } from "lucide-react";
 
+import { Separator } from "@/components/ui/separator";
 import { useCart } from "@/lib/contexts/cart";
 import { Link } from "react-router";
 import { LanguagePicker } from "../language-picker";
@@ -67,11 +68,15 @@ const Header = () => {
               </NavigationMenuLink>
             </NavigationMenuItem>
 
+            <Separator orientation="vertical" className="!h-6" />
+
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
                 <Link to="/empresa">A empresa</Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
+
+            <Separator orientation="vertical" className="!h-6" />
 
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
@@ -79,11 +84,15 @@ const Header = () => {
               </NavigationMenuLink>
             </NavigationMenuItem>
 
+            <Separator orientation="vertical" className="!h-6" />
+
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
                 <Link to="/">Produtos</Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
+
+            <Separator orientation="vertical" className="!h-6" />
 
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
@@ -91,11 +100,15 @@ const Header = () => {
               </NavigationMenuLink>
             </NavigationMenuItem>
 
+            <Separator orientation="vertical" className="!h-6" />
+
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
                 <Link to="/">Treinamentos</Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
+
+            <Separator orientation="vertical" className="!h-6" />
 
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
@@ -103,11 +116,15 @@ const Header = () => {
               </NavigationMenuLink>
             </NavigationMenuItem>
 
+            <Separator orientation="vertical" className="!h-6" />
+
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
                 <Link to="/">Fórum</Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
+
+            <Separator orientation="vertical" className="!h-6" />
 
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
